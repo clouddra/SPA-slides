@@ -1,6 +1,11 @@
 // Import React
 import React from "react";
 
+   // {" You don't want to code out what I'm thinking" - Kah Kong}
+   // " Girl nerd = ugly" - Jia Rong
+   // " I don't bullshit" - Kah Kong
+   // "I think our pay is pegged to Mumbai pay" - Yong Wen
+   // " Close friends cannot become couples" - Jia Rong
 // Import Spectacle Core tags
 import {
   Appear,
@@ -46,8 +51,15 @@ const images = {
 preloader(images);
 
 const theme = createTheme({
-  primary: "#ff4081"
+  primary: "Orange"
 });
+
+// const theme = createTheme({
+//   primary: "red"
+// }, {
+//   primary: "Helvetica"
+// })
+
 
 export default class Presentation extends React.Component {
   render() {
@@ -115,10 +127,14 @@ export default class Presentation extends React.Component {
             </Layout>
           </Slide>
           <Slide transition={["slide"]} bgColor="black">
-            <BlockQuote>
-              <Quote>Wonderfully formatted quotes</Quote>
-              <Cite>Ken Wheeler</Cite>
+                <Heading size={1} caps textColor="tertiary" margin={0} lineHeight={1.2} fit>
+                  Complexity
+                </Heading>
+            <BlockQuote >
+              <Quote textSize='1.2em'>"BGP is like Naruto. You think this form is difficult, wait for the next form" </Quote>
+              <Cite>Yew Lee</Cite>
             </BlockQuote>
+
           </Slide>
           <Slide transition={["spin", "zoom"]} bgColor="tertiary">
             <Heading caps fit size={1} textColor="primary">
